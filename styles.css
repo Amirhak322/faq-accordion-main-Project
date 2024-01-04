@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Work Sans';
+  src: url("assets/fonts/WorkSans-VariableFont_wght.ttf") format(ttf);
+}
+@font-face {
+  font-family: 'WorkSansB';
+  src: url('assets/fonts/static/WorkSans-Bold.ttf') format(ttf);
+}
+body{
+  font-family: 'Work Sans';
+  /* color: hsl(292, 42%, 14%); */
+  /* background-image: url("/assets/images/background-pattern-mobile.svg"); */
+}
+.back1{
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  top: 0;
+  z-index: 1;
+  height: 25vh;
+
+}
+.back2{
+  background-color: hsl(275, 100%, 97%);
+  bottom: 0;
+  z-index: 0;
+  height: 75vh;
+
+}
+.back1 ,.back2{
+  position: absolute;
+  width: 100vw;
+}
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 5vw;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1vh 4vw;
+  font-family: 'Work Sans';
+  z-index: 2;
+}
+.header{
+  display: flex;
+  align-items: center;
+  font-family: 'WorkSansB';
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+.header > h1{
+  padding-left: 3vw;
+  font-weight: 700;
+}
+.accordion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  padding: 2vh 0 ;
+  background-color: white;
+  color: hsl(292, 42%, 14%);
+  border-bottom: 1px solid hsl(292, 16%, 49%,0.3) ;
+}
+.last{
+  border: none;
+}
+.acc-text{
+  padding-right: 6vw;
+}
+.accordion:hover{
+  color: blue;
+}
+.panel{
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+@media screen and (min-width:1440px) {
+  .container{
+    margin: 15vh 35vw;
+    padding: 1vh 3vw;
+  }
+  .header > h1{
+    padding-left: 1vw;
+  }
+}

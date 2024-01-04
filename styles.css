@@ -12,7 +12,7 @@ body{
   /* background-image: url("/assets/images/background-pattern-mobile.svg"); */
 }
 .back1{
-  background-image: url("/assets/images/background-pattern-mobile.svg");
+  background-image: url("assets/images/background-pattern-mobile.svg");
   top: 0;
   z-index: 1;
   height: 25vh;
